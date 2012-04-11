@@ -14,9 +14,9 @@ module.exports = function(app){
 		if (req.accepts('html')) {
 			res.render('index.html', {locals: {info:info}});
 		} else if (req.accepts('json')) {
-			res.send({info:info});
+			res.contentType('json').send({info:info});
 		} else {
-			res.type('txt').send(
+			res.contentType('text').send(
 				'name: ' + info.name + '\n' +
 				'description: ' + info.description + '\n' +
 				'version: ' + info.version + '\n'

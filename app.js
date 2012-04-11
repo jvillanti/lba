@@ -17,9 +17,9 @@ require.extensions[".json"] = function (m) {
 };
 
 // Handle uncaught exceptions
-process.on('uncaughtException', function(err) {
+/*process.on('uncaughtException', function(err) {
 	winston.error(err.toString(), err);
-});
+});*/
 
 // Creat server
 var app = express.createServer();
@@ -64,9 +64,9 @@ app.configure(function(){
 		if (req.accepts('html')) {
 			res.status(404).send('<h1>Not found</h1>');
 		} else if (req.accepts('json')) {
-			res.send({error: 'Not found'});
+			res.status(404).send({error: 'Not found'});
 		} else {
-			res.type('txt').send('Not found');
+			res.status(404).contentType('text/plain').send('Not found');
 		}
 	});
 });
@@ -94,9 +94,9 @@ app.error(function(err, req, res) {
 	if (req.accepts('html')) {
 		res.status(500).send(err);
 	} else if (req.accepts('json')) {
-		res.send({error: err});
+		res.status(500).send({error: err});
 	} else {
-		res.type('txt').send(err);
+		res.status(500).contentType('text/plain').send(JSON.stringify(err));
 	}
 });
 
