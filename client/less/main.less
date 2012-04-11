@@ -1,0 +1,58 @@
+// waiting for https://github.com/cloudhead/less.js/issues/588
+// @bootstrap-path: "../support/bootstrap/less";
+
+// CSS Reset
+@import "../support/bootstrap/less/reset.less";
+
+// Core variables and mixins
+@import "../support/bootstrap/less/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "../support/bootstrap/less/mixins.less";
+
+// Grid system and page structure
+@import "../support/bootstrap/less/scaffolding.less";
+@import "../support/bootstrap/less/grid.less";
+@import "../support/bootstrap/less/layouts.less";
+
+// Base CSS
+@import "../support/bootstrap/less/type.less";
+@import "../support/bootstrap/less/code.less";
+@import "../support/bootstrap/less/forms.less";
+@import "../support/bootstrap/less/tables.less";
+
+// Components: common
+@import "../support/bootstrap/less/sprites.less";
+@import "../support/bootstrap/less/dropdowns.less";
+@import "../support/bootstrap/less/wells.less";
+@import "../support/bootstrap/less/component-animations.less";
+@import "../support/bootstrap/less/close.less";
+
+// Components: Buttons & Alerts
+@import "../support/bootstrap/less/buttons.less";
+@import "../support/bootstrap/less/button-groups.less";
+@import "../support/bootstrap/less/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+
+// Components: Nav
+@import "../support/bootstrap/less/navs.less";
+@import "../support/bootstrap/less/navbar.less";
+@import "../support/bootstrap/less/breadcrumbs.less";
+@import "../support/bootstrap/less/pagination.less";
+@import "../support/bootstrap/less/pager.less";
+
+// Components: Popovers
+@import "../support/bootstrap/less/modals.less";
+@import "../support/bootstrap/less/tooltip.less";
+@import "../support/bootstrap/less/popovers.less";
+
+// Components: Misc
+/*
+@import "../support/bootstrap/less/thumbnails.less";
+@import "../support/bootstrap/less/labels.less";
+@import "../support/bootstrap/less/badges.less";
+@import "../support/bootstrap/less/progress-bars.less";
+@import "../support/bootstrap/less/accordion.less";
+@import "../support/bootstrap/less/carousel.less";
+@import "../support/bootstrap/less/hero-unit.less";
+*/
+
+// Utility classes
+@import "../support/bootstrap/less/utilities.less"; // Has to be last to override when necessary

@@ -1,0 +1,3 @@
+[submodule "client/support/bootstrap"]
+	path = client/support/bootstrap
+	url = git://github.com/twitter/bootstrap.git

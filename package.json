@@ -1,0 +1,28 @@
+{
+	"author": "PullRequest Team",
+	"name": "lba",
+	"description": "LBA Project",
+	"version": "0.0.1",
+	"homepage": "https://github.com/ncarlier/lba",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:ncarlier/lba.git"
+	},
+	"main": "app.js",
+	"engines": {
+		"node": ">=v0.4.12"
+	},
+	"dependencies": {
+		"express":"2.5.x",
+		"express-form":"0.6.x",
+		"sprintf":"*",
+		"connect-redis":"1.2.x",
+		"mongoose":"2.2.0",
+		"ejs":"0.6.x",
+		"async":"0.1.x",
+		"cloudfoundry":"0.1.x",
+		"ain2": "",
+		"winston": ""
+	},
+	"devDependencies": {}
+}

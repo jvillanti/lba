@@ -34,7 +34,8 @@ See following installation procedure : [https://github.com/joyent/node/wiki/Inst
 ### Install Web Site
 
         cd ~/local/var/lib
-        git git@github.com:ncarlier/lba.git
+        git clone git@github.com:ncarlier/lba.git
+        git submodule init
         cd lba
         make
 
